@@ -1,0 +1,57 @@
+#Phone{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: centerc;
+}
+
+#container_phone{
+    position: relative;
+    width: clamp(350px, 31%, 476px);
+    height: clamp(300px, 90vh, 648px);
+    border: 1px solid #828282;
+    border-radius: 2px;
+    box-shadow: 0px 15px 20px rgba(42, 43, 43, 0.4);
+    color: #fff;
+    font-family: "Death";
+    text-align: center;
+    line-height: 18rem;
+    font-size: 1.2rem;
+}
+
+.Phone_C{
+    animation: Phone 1s both;
+}
+
+@keyframes Phone {
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    
+}
+
+@media  (max-width:600px){
+    html{
+        font-size: 90%;
+    }
+}
+
+@media(orientation:landscape) {
+    #DeathNote{
+        display: none;
+    }
+    #Phone{
+        display: flex;
+    }
+}
+
+@media  (min-width:1000px),  (orientation:portrait) {
+    #DeathNote{
+        display: flex;
+    }
+    #Phone{
+        display: none;
+    }
+}

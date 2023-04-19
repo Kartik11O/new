@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/1.All-classes.css">
+    <link rel="stylesheet" href="CSS/2.Animatoin.css">
+    <link rel="stylesheet" href="CSS/3.Phone.css">
+</head>
+
+<body>
+    <section id="DeathNote">
+        <div id="container" class="Size animation">
+            <div id="page1" class="Size" onclick="(Page1())"></div>
+
+            <div id="page2" class="Size" onclick="Page2()">
+                <h1 id="headline_page2">Death Note</h1>
+                <h2 class="h2_f"> “The human whose name is written in this note shall die.”</h2>
+                <h2 class="h2_f">This note will not take effect unless the writer has the person’s face in their mind
+                    when writing his/her name. Therefore, people sharing the same name will not be affected.</h2>
+                <h2 class="h2_f">After writing the cause of death, details of the death should be written in the next 6
+                    minutes and 40 seconds.</h2>
+                <h2 class="h2_f">The human who touches the Death Note can recognize the image and voice of its original
+                    owner, a god of death, even if the human is not the owner of the note.</h2>
+                <h2 class="h2_f">The person in possession of the Death Note is possessed by a god of death, its original
+                    owner, until they die.</h2>
+            </div>
+
+            <div id="page3" class="Size">
+                <h1 id="headline_page2">Trems</h1>
+                <input class="User" id="Fill" type="text" placeholder="Name">
+                <input class="User" id="Fill2" type="number" placeholder="Age">
+                <button id="btn_s" onclick="Submit()">Accede</button>
+                <div id="warning">
+                    <h2>Fill your Details</h2>
+                </div>
+            </div>
+
+            <div id="page4" class="Size" >
+                <textarea name="" id="Text" cols="0" rows="0" ondblclick="Hide()" ></textarea>
+            </div>
+
+            
+            
+        </div>
+
+    </section>
+
+
+    <section id="Phone">
+        <div id="container_phone">
+            <h1>Switch to portrait mode</h1>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="JS/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: "Death";
+    src: url(CloisterBlack.ttf);
+}
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Size{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    border-radius: 2px;
+    border: 1px solid #828282;
+    box-shadow: 0px 15px 20px rgba(42, 43, 43, 0.4);
+    background-color: #000;
+}
+
+#container {
+    position: relative;
+    width: clamp(350px, 31%, 476px);
+    height: clamp(300px, 90vh, 648px);
+    border: 1px solid #828282;
+    border-radius: 2px;
+    box-shadow: 0px 15px 20px rgba(42, 43, 43, 0.4);
+}
+#page1::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("DeathNoteCover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 99;
+}
+
+
+#headline_page2{
+    font-size: 4rem;
+    text-align: center;
+    font-family: "Death";
+}
+.h2_f{
+    font-size: 1.3rem;
+    margin: 1rem;
+    font-family: "Death";
+    font-weight: 100;
+}
+
+.User{
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    width: 50%;
+    height: 7vh;
+    padding: 0px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: "Death";
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 7px 20px rgb(74 75 74 / 40%);
+}
+
+#btn_s{
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    width: 28%;
+    height: 5vh;
+    font-size: 1.3rem;
+    border-radius: 6px;
+    font-family: "Death";
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    color: #000;
+}
+#btn_s:hover{
+    background-color:#28282B;
+    color: #fff;
+}
+
+#warning{
+   width: clamp(215px,14vh,215px);
+    height: 10%;
+    line-height: 60px;
+    margin: auto;
+    margin-top: 4rem;
+    font-weight: 100;
+    border-radius: 19px;
+    color: #000000;
+    text-align: center;
+    font-family: "Death";
+    background: #bbb;
+    display: none;
+}
+
+
+#Text{
+    position: absolute;
+    height: 99.7%;
+    width: 99%;
+    z-index: 99;
+    color: #000000;
+    resize: none;
+    outline: none;
+    line-height: 29px;
+    font-size: 1.7rem;
+    font-family: "Death";
+    background: linear-gradient(transparent, transparent 28px, #000000 28px);
+    background-size: 30px 29px;
+    background-color: #fff;
+    background-attachment:local;
+}
+
+
+#page2, #page3,#page4,#page5{
+    visibility: hidden;
+    }
+
+    /* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 13px;
+}
+
